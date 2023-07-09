@@ -29,7 +29,7 @@ section {
 }
 
 #landing {
-    min-height: 100lvh;
+    min-height: 100svh;
     position: relative;
     display: flex;
     flex-direction: column;
