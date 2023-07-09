@@ -15,6 +15,10 @@ body {
     background-color: #3e4250;
 }
 
+section {
+    padding: 2em 2em;
+}
+
 #portrait {
     display: none;
     position: absolute;
@@ -25,20 +29,18 @@ body {
 }
 
 #landing {
-    height: 100dvh;
-    padding: 2em 2em;
+    min-height: 100dvh;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
 }
 
-#bottom {
-    max-width: 165px;
-}
-
-#blurb {
+.blurb {
     margin: 0 0 1.5em 0;
+    max-width: 11rem;
+
 }
 
 .inverted-button {
@@ -46,13 +48,21 @@ body {
     border-radius: 4px;
     border: 1px solid #fff;
     padding: 0.3em 0.5em;
+    margin: 0.3em 0;
+    text-decoration: none;
+}
+
+.inverted-button:hover {
+    transition: 0.1s ease-out;
+    background-color: white;
+    color: #3e4250;
+    cursor: pointer;
 }
 
 .icons-list {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    padding: 0.2em 0 1em 0;
 }
 
 
@@ -62,15 +72,122 @@ body {
     opacity: 80%;
 }
 
-@media screen and ((min-width: 310px) and (min-height: 420px)), ((min-width: 460px) and (min-height: 380px)){
-    #portrait {
-        display: block;
+@media screen and (orientation: portrait) {
+
+    @media screen and (min-width: 290px) and (min-height: 430px) {
+        #portrait {
+            display: block;
+            height: 290px;
+        }
     }
 
+    @media screen and (min-width: 370px) {
+        
+        #portrait {
+            height: 400px;
+            bottom: -80px;
+        }
+        @media screen and (min-height: 540px) {
+            #portrait {
+                bottom: 0;
+            }
+            
+        }
+    }
+
+    @media screen and (min-width: 440px) {
+        #portrait {
+            height: 500px;
+            bottom: -167px;
+        }
+
+        @media screen and (min-height: 580px) {
+            #portrait {
+                bottom: -87px;
+            }
+            
+        }
+
+        @media screen and (min-height: 660px) {
+            #portrait {
+                bottom: 0;
+            }
+            
+        }
+    }
+
+    @media screen and (min-width: 620px) {
+        #portrait {
+            height: 600px;
+            bottom: -150px;
+        }
+        @media screen and (min-height: 700px) {
+            #portrait {
+                bottom: -50px;
+            }
+        }
+        
+    }
+
+    @media screen and (min-width: 700px) {
+        #portrait {
+            height: 80%;
+        }
+    }
+
+    
 }
 
-@media screen and (min-width: 321px) {
-    #bottom {
-        max-width: 180px;
+
+@media screen and (orientation: landscape) {
+
+    @media screen and (min-width: 440px) {
+        #portrait {
+            display: block;
+        }
+        
+    }
+    
+    @media screen and (min-height: 250px) and (min-width: 470px) {
+        #portrait {
+            height: 400px;
+            bottom: -133px;
+            
+        }
+    }
+
+    @media screen and (min-height: 300px) and (min-width: 600px) {
+        #portrait {
+            height: 480px;
+            bottom: -160px;
+        }
+        
+    }
+
+    @media screen and (min-height: 500px) {
+        #portrait {
+            height: 480px;
+            bottom: -160px;
+        }
+    }
+
+    @media screen and (min-height: 640px) {
+        #portrait {
+            height: 600px;
+            bottom: -200px;
+        }
+        
+    }
+    
+    @media screen and (min-height: 900px) {
+        #portrait {
+            height: 80%;
+        }
+    }
+
+    @media screen and (min-width: 600px) and (min-height: 500px), (min-height: 700px) {
+        #portrait {
+            bottom: 0;
+        }
     }
 }

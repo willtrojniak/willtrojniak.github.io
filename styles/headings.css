@@ -19,6 +19,7 @@ h1 {
 h2 {
     font-size: 2.0rem;
     font-weight: 400;
+    margin: 0.4em 0 0.2em;
 }
 
 h3 {
@@ -35,7 +36,7 @@ h4 {
 p {
     font-size: 0.875rem;
     font-weight: 400;
-    margin: 1em 0;
+    margin: 0.4em 0;
 }
 
 .green {
@@ -44,4 +45,17 @@ p {
 
 .orange {
     color: #FF8A32;
+}
+
+
+@media screen and (min-width: 600px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    html {
+        font-size: 20px;
+    }
 }
