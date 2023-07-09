@@ -16,26 +16,29 @@ body {
 }
 
 #portrait {
+    display: none;
     position: absolute;
     right: 0;
     bottom: 0;
-    height: 400px;
+    height: 300px;
     z-index: -1;
 }
 
 #landing {
     height: 100dvh;
     padding: 2em 2em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #bottom {
-    max-width: 160px;
-    position: absolute;
-    bottom: 2em;
+    max-width: 165px;
 }
 
 #blurb {
-    margin: 0 0 4em 0;
+    margin: 0 0 1.5em 0;
 }
 
 .inverted-button {
@@ -49,6 +52,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: start;
+    padding: 0.2em 0 1em 0;
 }
 
 
@@ -56,4 +60,17 @@ body {
     width: 0.875em;
     margin: 0 0.2em;
     opacity: 80%;
+}
+
+@media screen and ((min-width: 310px) and (min-height: 420px)), ((min-width: 460px) and (min-height: 380px)){
+    #portrait {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 321px) {
+    #bottom {
+        max-width: 180px;
+    }
 }
