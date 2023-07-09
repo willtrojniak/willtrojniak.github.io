@@ -62,15 +62,127 @@ body {
     opacity: 80%;
 }
 
-@media screen and ((min-width: 310px) and (min-height: 420px)), ((min-width: 460px) and (min-height: 380px)){
-    #portrait {
-        display: block;
+@media screen and (orientation: portrait) {
+
+    @media screen and (min-width: 290px) and (min-height: 430px) {
+        #portrait {
+            display: block;
+            height: 290px;
+        }
     }
 
+    @media screen and (min-width: 370px) {
+        #portrait {
+            height: 400px;
+            bottom: -80px;
+        }
+        @media screen and (min-height: 540px) {
+            #portrait {
+                bottom: 0;
+            }
+            
+        }
+    }
+
+    @media screen and (min-width: 400px) {
+        #portrait {
+            height: 500px;
+            bottom: -167px;
+        }
+
+        @media screen and (min-height: 580px) {
+            #portrait {
+                bottom: -87px;
+            }
+            
+        }
+
+        @media screen and (min-height: 660px) {
+            #portrait {
+                bottom: 0;
+            }
+            
+        }
+    }
+
+    @media screen and (min-width: 620px) {
+        #portrait {
+            height: 600px;
+            bottom: -150px;
+        }
+        @media screen and (min-height: 700px) {
+            #portrait {
+                bottom: -50px;
+            }
+        }
+        
+    }
+
+    @media screen and (min-width: 700px) {
+        #portrait {
+            height: 80%;
+        }
+    }
+
+    
+}
+
+
+@media screen and (orientation: landscape) {
+
+    @media screen and (min-width: 440px) {
+        #portrait {
+            display: block;
+        }
+        
+    }
+    
+    @media screen and (min-height: 250px) and (min-width: 470px) {
+        #portrait {
+            height: 400px;
+            bottom: -133px;
+            
+        }
+    }
+
+    @media screen and (min-height: 300px) and (min-width: 600px) {
+        #portrait {
+            height: 480px;
+            bottom: -160px;
+        }
+        
+    }
+
+    @media screen and (min-height: 500px) {
+        #portrait {
+            height: 480px;
+            bottom: -160px;
+        }
+    }
+
+    @media screen and (min-height: 640px) {
+        #portrait {
+            height: 600px;
+            bottom: -200px;
+        }
+        
+    }
+    
+    @media screen and (min-height: 900px) {
+        #portrait {
+            height: 80%;
+        }
+    }
+
+    @media screen and (min-width: 600px) and (min-height: 500px), (min-height: 700px) {
+        #portrait {
+            bottom: 0;
+        }
+    }
 }
 
 @media screen and (min-width: 321px) {
     #bottom {
-        max-width: 180px;
+        /* max-width: 180px; */
     }
 }
