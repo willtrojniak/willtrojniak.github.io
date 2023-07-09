@@ -25,12 +25,13 @@ body {
 }
 
 #landing {
-    height: 100dvh;
+    min-height: 100dvh;
     padding: 2em 2em;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 #bottom {
@@ -52,7 +53,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    padding: 0.2em 0 1em 0;
 }
 
 
