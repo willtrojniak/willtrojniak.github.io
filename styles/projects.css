@@ -10,7 +10,7 @@
 }
 
 .project:hover {
-    transition: 0.2s ease-in;
+    transition: 0.3s ease-out;
     cursor: pointer;
     border-right: 1px solid #2CDE89;
     box-shadow: 10px 0 10px -10px #2CDE89;

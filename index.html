@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="styles/index.css">
   <link rel="stylesheet" href="styles/headings.css">
   <link rel="stylesheet" href="styles/projects.css">
+  <link rel="stylesheet" href="styles/animations.css">
+  
 </head>
 <body>
   <section id="landing">
@@ -31,11 +33,11 @@
     <a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by Freepik - Flaticon</a> -->
   </section>
   <section id="projects">
-    <div class="section-header">
+    <div class="section-header" data-inviewport="fade-in">
       <h2>My <span class="green">Scrap Work</span></h2>
       <h4>Because nothing's ever <i>really</i> finished.</h4>
     </div>
-    <div class="about">
+    <div class="about" data-inviewport="fade-in">
       <h3>About</h3>
       <p>
         I like to work on projects that serve a purpose in my day to day, 
@@ -44,32 +46,35 @@
         like skiing with friends, drawing, and developing!
       </p>
     </div>
-    <div class="project">
-      <h3>Sales Tracker</h3>
-      <p>
-        Web app for tracking café orders. View active and past tabs, tab 
-        totals, and automatically create itemized receipts. Used by over 
-        70 Princeton University Student Agency employees weekly.
-      </p>
-      <div class="project-tags">
-        <div class="project-tag">React</div>
-        <div class="project-tag">Firebase</div>
+    <div  data-inviewport="fade-in">
+      <div class="project">
+        <h3>Sales Tracker</h3>
+        <p>
+          Web app for tracking café orders. View active and past tabs, tab 
+          totals, and automatically create itemized receipts. Used by over 
+          70 Princeton University Student Agency employees weekly.
+        </p>
+        <div class="project-tags">
+          <div class="project-tag">React</div>
+          <div class="project-tag">Firebase</div>
+        </div>
+        <img src="assets/Sale Tracker.png"/>
       </div>
-      <img src="assets/Sale Tracker.png"/>
-    </div>
-    <div class="project">
-      <h3>Sales Tracker</h3>
-      <p>
-        Web app for tracking café orders. View active and past tabs, tab 
-        totals, and automatically create itemized receipts. Used by over 
-        70 Princeton University Student Agency employees weekly.
-      </p>
-      <div class="project-tags">
-        <div class="project-tag">React</div>
-        <div class="project-tag">Firebase</div>
+      <div class="project">
+        <h3>Sales Tracker</h3>
+        <p>
+          Web app for tracking café orders. View active and past tabs, tab 
+          totals, and automatically create itemized receipts. Used by over 
+          70 Princeton University Student Agency employees weekly.
+        </p>
+        <div class="project-tags">
+          <div class="project-tag">React</div>
+          <div class="project-tag">Firebase</div>
+        </div>
+        <img src="assets/Sale Tracker.png"/>
       </div>
-      <img src="assets/Sale Tracker.png"/>
     </div>
   </section>
+  <script src="scripts/scrollanimations.js"></script>
 </body>
 </html>
