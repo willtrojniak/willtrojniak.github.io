@@ -1,0 +1,46 @@
+---
+import "../styles/global.css"
+import Navbar from '../components/Navbar.astro'
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Will Trojniak</title>
+  <link rel="stylesheet" href="/output.css">
+</head>
+
+<body>
+  <main class="min-h-lvh flex flex-col w-full">
+    <Navbar/>
+    <section class="flex-1 m-auto max-w-2xl w-full px-8">
+      <h1 class="text-3xl font-semibold mb-2">Contact</h1>
+      <ul class="list-disc px-4 mb-8 text-lg">
+        <li><a href="mailto:william.trojniak@gmail.com"
+            class="text-blue-500 hover:underline">william.trojniak@gmail.com</a>
+          (Primary)
+        </li>
+        <li><a href="mailto:will.trojniak@princeton.edu"
+            class="text-blue-500 hover:underline">will.trojniak@princeton.edu</a></li>
+      </ul>
+      <div>
+        <h2 class="text-2xl font-semibold mb-2">Socials</h2>
+        <ul class="list-disc px-4 text-lg">
+          <li> <a class="text-blue-500 hover:underline" href="https://www.linkedin.com/in/will-trojniak"> LinkedIn </a>
+          </li>
+          <li> <a class="text-blue-500 hover:underline" href="https://www.github.com/williamtrojniak"> GitHub </a> </li>
+          <li> <a class="text-blue-500 hover:underline" href="https://www.instagram.com/willtrojniak"> Instagram </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="p-4 text-sm font-light text-center">
+      &copy; 2024 - 2025 William Trojniak
+    </footer>
+  </main>
+</body>
+
+</html>
