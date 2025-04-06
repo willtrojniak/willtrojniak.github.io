@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css"
 import Navbar from '../components/Navbar.astro'
+import Footer from "../components/Footer.astro"
 ---
 
 <!DOCTYPE html>
@@ -10,15 +11,14 @@ import Navbar from '../components/Navbar.astro'
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - Will Trojniak</title>
-  <link rel="stylesheet" href="/output.css">
 </head>
 
 <body>
   <main class="min-h-lvh flex flex-col w-full">
     <Navbar/>
     <section class="flex-1 m-auto max-w-2xl w-full px-8">
-      <h1 class="text-3xl font-semibold mb-2">Contact</h1>
-      <ul class="list-disc px-4 mb-8 text-lg">
+      <h1 class="text-3xl font-semibold mb-4">Contact</h1>
+      <ul class="list-disc px-4 mb-6 text-lg">
         <li><a href="mailto:william.trojniak@gmail.com"
             class="text-blue-500 hover:underline">william.trojniak@gmail.com</a>
           (Primary)
@@ -37,9 +37,7 @@ import Navbar from '../components/Navbar.astro'
         </ul>
       </div>
     </section>
-    <footer class="p-4 text-sm font-light text-center">
-      &copy; 2024 - 2025 William Trojniak
-    </footer>
+    <Footer/>
   </main>
 </body>
 
