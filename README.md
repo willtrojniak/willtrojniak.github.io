@@ -1,2 +1,2 @@
-# williamtrojniak.github.io
+# willtrojniak.github.io
 Personal Portfolio Website
