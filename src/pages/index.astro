@@ -2,6 +2,8 @@
 import "../styles/global.css"
 import Navbar from '../components/Navbar.astro'
 import Footer from "../components/Footer.astro"
+import { Image } from 'astro:assets'
+import profileImg from '../assets/will.jpg'
 ---
 
 
@@ -19,7 +21,7 @@ import Footer from "../components/Footer.astro"
     <section class="flex-1 flex items-center justify-center">
       <div class="flex flex-col items-center max-w-2xl mx-8">
         <div class="w-52 h-52 border rounded-full overflow-hidden mb-8">
-          <img src="/assets/will.jpg" alt="placeholder" />
+            <Image src={profileImg} alt="Will" />
         </div>
         <h1 class="text-3xl font-semibold mb-2">Will Trojniak</h1>
         <div class="text-2xl font-semibold text-center mb-4">
@@ -27,7 +29,7 @@ import Footer from "../components/Footer.astro"
         </div>
         <ul>
           <li class="inline-block mx-1.5">
-            <a href="https://www.linkedin.com/in/will-trojniak">
+            <a href="https://www.linkedin.com/in/will-trojniak" aria-label="LinkedIn">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
                 class="size-6 animate-wiggle hover:animate-none delay-[3000ms]>"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                 <path
@@ -36,7 +38,7 @@ import Footer from "../components/Footer.astro"
             </a>
           </li>
           <li class="inline-block mx-1.5">
-            <a href="https://www.github.com/willtrojniak">
+            <a href="https://www.github.com/willtrojniak" aria-label="Github">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"
                 class="size-6 animate-wiggle hover:animate-none"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                 <path
@@ -45,7 +47,7 @@ import Footer from "../components/Footer.astro"
             </a>
           </li>
           <li class="inline-block mx-1.5">
-            <a href="https://www.instagram.com/willtrojniak">
+            <a href="https://www.instagram.com/willtrojniak" aria-label="Instagram">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
                 class="size-6"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                 <path
