@@ -1,0 +1,90 @@
+---
+import "../../styles/global.css"
+import Navbar from "../../components/Navbar.astro"
+import Footer from "../../components/Footer.astro"
+import BlogHeader from "../../components/BlogHeader.astro"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HashiConf 2025 - Will Trojniak</title>
+</head>
+
+<body>
+    <main class="min-h-lvh flex flex-col w-full">
+      <Navbar/>
+      <section class="flex-1 m-auto max-w-2xl w-full px-8">
+        <BlogHeader title="HashiConf 2025" date="September 30, 2025"/>
+        <br/>
+        <p class="font-serif">
+          I attended a tech conference for the first time last week.
+          Over the course of two days, I learned about all sorts of 
+          dev-ops related problems being faced by different teams and
+          was presented with their approaches to resolving them. 
+          The conference left me incredibly inspired to take a second look for
+          things that I can automate in my own life and build solutions for them.
+        </p>
+        <br/>
+        <h4 class="font-bold">Why did I go?</h4>
+        <p class="font-serif">
+          My YouTube feed is riddled with talks from different conferences. They're my favorite
+          videos to watch because I always find myself leaving with all sorts of new ideas learned.
+          It's since been on my list to go and experience a conference in person; I was certain I would learn a ton.
+        </p>
+        <br/>
+        <p class="font-serif">
+          After working with <a href="https://developer.hashicorp.com/terraform" class="underline text-blue-500">Terraform</a>
+          quite extensively over the summer, I became familiar with HashiCorp and their story. 
+          Founded on the open source developer tools they built to automate infrastructure (IaC), I took a real liking to them.
+          I've always been really fascinated by tools meant for the developer, 
+          from massive <a href="/projects#froth" class="underline text-blue-500">game engines</a>, 
+          or simple <a href="/projects#flipp" class="underline text-blue-500">editor plugins</a>.
+          As a developer, I feel that the complexity of these tools is especially appreciated
+          and I love how they enable others to create on top of them.
+        </p>
+        <br/>
+        <p class="font-serif">
+          That's why I wanted to go to HashiConf. For one, it was a chance to learn about
+          the best practices for the tools I'd recently picked up. 
+          It was also an opportunity to be introduced to some of their other products.
+          Most excitingly, though, it was an opportunity to connect with the people developing these tools and
+          dive into their ideas and plans for where their products will go.
+        </p>
+        <br/>
+        <h4 class="font-bold">Takeaways</h4>
+        <p class="font-serif">
+          The most direct takeaway that I have from the conference is that we are nowhere near a perfect solution to cloud management.
+          Despite tools like Terraform having matured significantly over the past ten or so years, 52%
+          of companies that HashiCorp surveyed still rank cloud complexity among their top three infrastructure management
+          challenges and 73% report that their platform engineers and security team do not work in unison. Learning about how
+          far we've come with IaC, and seeing these numbers, I couldn't help but start to imagine what might come.
+        </p>
+        <br/>
+        <p class="font-serif">
+          Besides the products, I was also introduced to a bunch of really passionate people. 
+          Most of them were heavily focused on security and were there to learn more about
+          <a href="https://developer.hashicorp.com/vault" class="underline text-blue-500">Vault</a>.
+          They were also undertaking incredibly interesting projects of their own, from developing HSM chips 
+          to securing all of GitHub's user secrets. I left every interaction having learned something new and
+          I feel as though my perception of what it means to be a software developer has expanded from a pinhole
+          to a full window (and I'm sure that it will continue to expand). 
+        </p>
+        <br/>
+        <p class="font-serif">
+          Finally, I was lucky enough to run into <a href="https://mitchellh.com/" class="underline text-blue-500">Mitchell</a>
+          during the last hours of the conference. The passion that he has for the tools that he creates exudes from him, 
+          and it was impossible not to leave the conversation inspired. Despite being jetlagged and having just gone through an
+          action-packed two days, I left the conference as energized as I've ever felt, 
+          thinking about these lessons I had learned and where I could take them next.
+        </p>
+      </section>
+      <Footer/>
+    </main>
+
+</body>
+
+</html>
